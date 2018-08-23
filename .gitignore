@@ -1,3 +1,5 @@
 simpleproj/
 */bin/*
 */pkg/*
+
+*.swp
