@@ -1,12 +1,14 @@
 package main
 
-import "bufio"
-import "fmt"
-import "library"
-import "mp"
-import "os"
-import "strconv"
-import "strings"
+import (
+	"bufio"
+	"fmt"
+	"library"
+	"mp"
+	"os"
+	"strconv"
+	"strings"
+)
 
 var lib *library.MusicManager
 var id int = 1
