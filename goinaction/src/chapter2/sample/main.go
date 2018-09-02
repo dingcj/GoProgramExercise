@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "chapter2/sample/matchers"
 	"chapter2/sample/search"
 	"log"
 	"os"
@@ -8,14 +9,10 @@ import (
 
 func init() {
 	log.SetOutput(os.Stdout)
-	log.Println("In function init.")
+
+	log.Println("Change log output to std out.")
 }
 
 func main() {
-	log.Println("In function main.")
-
-	feeds, _ := search.RetrieveFeeds()
-	for _, feed := range feeds {
-		log.Println(feed)
-	}
+	search.Run("president")
 }
